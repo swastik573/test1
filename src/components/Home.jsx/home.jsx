@@ -31,16 +31,16 @@ export const Home = () => {
         onChange={(e) => setQuery(e.target.value)}
         placeholder="search..."
       />
-      {matchingProducts &&
+      <div style={{display:"flex",flexWrap:"wrap"}}>{matchingProducts &&
         matchingProducts.map((product) => {
           return (
-            <div>
+            <div >
               <Link to={`/products/${product.id}`} key={product.id}>
-                {product.title}
+                <div className="cards"> product : {product.title}</div>
               </Link>
             </div>
           );
-        })}
+        })}</div>
       {query===""&&<ul>
         {categories.map((category,id) => {
           return (

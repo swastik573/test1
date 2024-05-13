@@ -18,3 +18,20 @@ a{
     text-decoration: none;
     color:rgb(23, 36, 32)
 }
+.cards{
+     
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    background-color: beige;
+}
+.cards:hover{
+    translate: scale(0.05em);
+    background-color: aquamarine;
+}
