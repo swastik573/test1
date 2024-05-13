@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import './product.css'
 
 export default function Product() {
     const location =useLocation();
@@ -20,13 +21,15 @@ export default function Product() {
   }
   return (
     <>
-    <ul>
+    <ul className='hello'>
         {products.map((category) => {
-            return <li ><Link to={`/products/${category.id}`}>{category.title}</Link></li>
+            return <li className='product-card' ><Link to={`/products/${category.id}`}><div style={{border:'1px solid black',backgroundColor:'lightblue'}}>{category.title} </div>  <div style={{color:'black' , height :'180px'}}> about : {category.description}</div>   <div style={{color:'red' , backgroundColor:"lightyellow"}}>price : {category.price}</div> </Link></li>
         })}
       </ul>
+      <div style={{marginLeft:'auto'}}>
       <button onClick={handlePrev} disabled={currentPage===0}>prev</button>
-      <button onClick={handleNext}>next</button>
+      <button onClick={handleNext} disabled={products.length===0}>next</button>
+      </div>
       </>
   )
 }

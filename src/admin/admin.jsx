@@ -9,7 +9,7 @@ export default function Admin() {
 .then(data => setUsers(data.users));
     },[])
   return (
-    <div>hello
+    <div>
         {users.map((user , id) => <div className='div' key ={id}>{user.firstName}</div>)}
     </div>
   )

@@ -1,0 +1,20 @@
+ul .categories{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+}
+a{
+    text-decoration: none;
+    color:rgb(23, 36, 32)
+}

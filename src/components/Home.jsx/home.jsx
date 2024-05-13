@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './home.css'
 
 export const Home = () => {
   const [categories, setCategories] = useState([]);
@@ -43,7 +44,7 @@ export const Home = () => {
       {query===""&&<ul>
         {categories.map((category,id) => {
           return (
-            <li key={id}>
+            <li className="categories" key={id}>
               <Link to={`/categories?category=${category}`}>{category}</Link>
             </li>
           );

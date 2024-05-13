@@ -1,0 +1,37 @@
+.product-card{
+    
+    justify-content: space-between;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+
+}
+.hello{
+    display: flex;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+button:disabled{
+    cursor: not-allowed;
+    background-color: aliceblue;
+}
+.product-card:hover{
+    transform: scale(1.05);
+    background-color: aquamarine;
+}

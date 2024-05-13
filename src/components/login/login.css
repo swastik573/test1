@@ -1,0 +1,21 @@
+.login{
+    padding: 30px;
+    margin-top:100px;
+    margin:auto;
+    width: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bcdbef;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.05em;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div{
+    margin: 10px;
+}
