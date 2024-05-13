@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import { Home } from './components/Home.jsx/home';
+import Login from './components/login/login';
+import Admin from './admin/admin';
 
 function App() {
+  const [auth ,setAuth] = useState('auth');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {(auth==='auth')&&<Login setAuth={setAuth}/>}
+    {(auth==='swastik')&&<Home/>}
+    {(auth==='admin')&&<Admin/>}
+
+
+    </>
   );
 }
 
