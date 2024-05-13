@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './admin.css'
 
 export default function Admin() {
     const [users,setUsers] = useState([]);
@@ -9,7 +10,7 @@ export default function Admin() {
     },[])
   return (
     <div>hello
-        {users.map((user , id) => <div key ={id}>{user.firstName}</div>)}
+        {users.map((user , id) => <div className='div' key ={id}>{user.firstName}</div>)}
     </div>
   )
 }
