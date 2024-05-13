@@ -44,8 +44,8 @@ export const Home = () => {
       {query===""&&<ul>
         {categories.map((category,id) => {
           return (
-            <li className="categories" key={id}>
-              <Link to={`/categories?category=${category}`}>{category}</Link>
+            <li  key={id}>
+              <Link to={`/categories?category=${category}`}><div className="categories">{category}</div></Link>
             </li>
           );
         })}
